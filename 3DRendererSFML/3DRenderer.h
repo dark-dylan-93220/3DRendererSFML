@@ -7,6 +7,12 @@
 #include <vector>
 #include <cmath>
 
+/*
+	x : L'axe horizontal (largeur de l'écran)
+	y : L'axe vertical   (hauteur de l'écran)
+	z : La "profondeur"  (éloignement visuel)
+*/
+
 struct Point3D {
 	float x, y, z;
 };
@@ -33,8 +39,14 @@ private:
 	std::vector<sf::Color> rainbowColors;
 	std::vector<Point3D> cubePoints3D;
 	std::vector<Point3D> pyramidPoints3D;
+	std::vector<Point3D> diamondPyramidPoints3D;
+	std::vector<Point3D> diamondPoints3D;
+	std::vector<Point3D> squaredDonutPoints3D;
 	std::vector<Vertex> cubeVertices;
 	std::vector<Vertex> pyramidVertices;
+	std::vector<Vertex> diamondPyramidVertices;
+	std::vector<Vertex> diamondVertices;
+	std::vector<Vertex> squaredDonutVertices;
 
 	// Public functions
 public:
